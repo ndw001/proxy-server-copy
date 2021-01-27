@@ -1,0 +1,488 @@
+@font-face {
+  font-family: BogleRegular;
+  src: url('assets/OTF/Bogle-Regular.otf');
+}
+@font-face {
+  font-family: BogleBold;
+  src: url('assets/OTF/Bogle-Bold.otf');
+}
+
+
+#container1 {
+  max-width: 1360px;
+display: grid;
+grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px;
+grid-template-rows: 280px 300px 300px 300px 300px 300px 300px 300px;
+margin: auto;
+position: relative;
+top: 100px;
+
+font-family: BogleRegular;
+
+}
+.reviewsheadline {
+ grid-column-start: 1;
+ grid-column-end: 8;
+ grid-row-start: 0;
+ grid-row-end: 1;
+ text-align: left;
+}
+.reviewsheadline {
+  font-weight: lighter;
+
+}
+.statsbar {
+  grid-column-start: 1;
+  grid-column-end: 9;
+ grid-row-start: 1;
+ grid-row-end: 2;
+
+}
+
+.veryfi {
+  color: green;
+  font-weight: bold;
+  font-size: small;
+}
+.revtitle {
+  font-weight: bold;
+  font-size: larger;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.overallratingsection {
+  width: 680px;
+  display: inline-block;
+}
+.revbuttons {
+  grid-column-start: 6;
+  grid-column-end:8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: inline-block;
+  vertical-align: 110px;
+  height: 150px;
+  width: 130px;
+}
+#writerevb {
+  border-radius: 17px;
+  width: 160px;
+  background-color: #0071dc;
+  border: none;
+  height: 45px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#seerevb {
+  border-radius: 17px;
+  background-color: white;
+  border-color: black;
+  height: 45px;
+  width: 160px;
+  font-weight: bold;
+  color: black;
+}
+#revcont2 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 9;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px;
+grid-template-rows: 300px 300px 300px 300px 300px 300px;
+}
+
+#posrevprime {
+  grid-column-start: 1;
+  grid-column-end:5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-right: 60px;
+  font-size: larger;
+}
+#negrevprime {
+  grid-column-start: 5;
+  grid-column-end:9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 60px;
+  font-size: larger;
+}
+#restorevs {
+  grid-column-start: 1;
+  grid-column-end:5;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  margin-top: 80px;
+}
+.dabo, .revti {
+  font-family: BogleBold;
+}
+#vssign {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 48;
+  height: 269px;
+  margin-left: 145px;
+}
+.author, .grebo {
+  font-family: BogleBold;
+  color: grey;
+}
+.fohe {
+  color: grey;
+  font-weight: lighter;
+}
+#more, #more2, #posmore, #negmore {display: none;}
+#myBtn, #myBtn2 {
+
+ border: none;
+ margin-left: 200px;
+}
+#approvalcontainer {
+  margin-left: 150px;
+  position: absolute;
+top: 98px;
+max-width: 109px;
+}
+#starshistogram {
+margin-left: 380px;
+margin-bottom: 100px;
+position: relative;
+bottom:100px
+}
+#starscontainer, #therating {
+  max-width: 180px;
+
+}
+#therating {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+#avgratingcontainer{
+  display: inline-flex;
+
+}
+#approvalpercent {
+  font-weight: bold;
+  font-size: 40px;
+
+}
+#sepsign {
+  position: absolute;
+top:85px;
+margin-left: 100px;
+width: 43;
+height: 140px;
+}
+
+.Meter {
+  height: 9px;
+  background-color:rgb(226, 226, 226);
+  width: 200px;
+  border-radius: 4px;
+}
+.MeterBar {
+  height: 9px;
+  background-color:#19a1c4;
+ width: 0px;
+ border-radius: 4px;
+}
+#fivest {
+  position: absolute;
+  left: 208px;
+  top: 15px;
+}
+#fourst {
+  position: absolute;
+  left: 208px;
+  top: 40px;
+}
+#threest {
+  position: absolute;
+  left: 208px;
+  top: 65px;
+}
+#twost {
+  position: absolute;
+  left: 208px;
+  top: 90px;
+}
+#onest {
+  position: absolute;
+  left: 208px;
+  top: 115px;
+}
+.fiscount, .foscount, .thscount, .twscount, .onscount{
+  position: relative;
+  right: 50px;
+  top: 13px;
+  text-decoration: underline;
+}
+.headlinepadding {
+  position: absolute;
+  top: 1px;
+}
+#hi1  {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #071e42;
+width: 100%;
+height: 100px;
+z-index: 5;
+top: 0px;
+left: 0px;
+}
+#walmartlogo {
+  height: 80px;
+  margin-top: 20px;
+}
+#accounts {
+  position: absolute;
+  height: 70px;
+  right: 10px;
+  top: 30px;
+
+}
+#pandd, #wmsite {
+  position: absolute;
+  top: 04px;
+  left: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: white;
+}
+#wmsite {
+  left: 150px;
+}
+#wally {
+position: absolute;
+top: 50px;
+left: 28%;
+width: 1000px;
+height: 30px;
+border-radius: 20px;
+border-color: transparent;
+}
+#magnifying {
+position: absolute;
+left: 28%;
+top: 57px;
+width: 16px;
+margin-left: 975px;
+z-index: 11;
+}
+#gla {
+  width: 50px;
+  height: 30px;
+  background-color: #fac221;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: transparent;
+  z-index: 10;
+  position: absolute;
+  left: 28%;
+  top: 50px;
+  margin-left: 960px;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color:transparent;
+  color: black;
+
+ font-size: 14px;
+  border: none;
+  text-decoration: underline;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 00px;
+  padding-bottom: 40px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-color: black;
+  border: 1px solid black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: white;}
+#feedb {
+  position: fixed;
+  right: -43px;
+  bottom: 250px;
+  margin: 0;
+  height: 41px;
+  width: 112px;
+  font-size: 14px;
+  border-radius: 5px;
+  border-width: 1.5px;
+  color: rgb(53, 53, 53);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+}
+#spb {
+  width:19px;
+  height: 19px;
+position: relative;
+top:2px;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+#footersec {
+  text-align: left;
+  margin: auto ;
+  padding: 20px;
+  font-family:BogleRegular ;
+ padding-top: 200px;
+
+}
+.linkscontent, .linkheaders {
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+}
+.linkheaders {
+  font-weight: normal;
+  font-family: BogleBold;
+}
+.linkscontent {
+  font-size: 15px;
+}
+.linkscontent:hover {
+  text-decoration: underline;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#signup {
+  position: relative;
+  bottom: 56px;
+  left: 446px;
+  height: 56px;
+  width: 127px;
+  color: white;
+  background-color: black;
+border: none;
+font-family: BogleBold;
+}
+#newletter {
+  width: 444px;
+  height: 52px;
+  border-radius: 2px;
+  border-width: 1px;
+  font-family: BogleRegular;
+  font-size: 16px;
+}
+#smedia {
+  width: 639px;
+  height: 59px;
+  position: absolute;
+  right: -100px;
+  bottom: 20px;
+}
+#subsid {
+  width: 1760px;
+  height: 114px;
+position: relative;
+top: 600px;
+right: 260px;
+
+}
+.ishelp {
+  color: grey;
+  font-size: 15px;
+}
+.afforneg, .snitch {
+  background-color: transparent;
+  color: grey;
+  border: none;
+  text-decoration: underline;
+
+}
+.afforneg:hover, .snitch:hover {
+color: black;
+}
+.manutitle {
+color: grey
+}
+.manpic {
+  margin-top: 10px;
+  position: relative;
+  top: 5px;
+}
+#numberofrevs {
+  margin-right: 50px;
+}
+.testdiv1 {
+  position: relative;
+  top: 0px;
+}
+.fullstar {
+  width: 15px;
+  height: 15px;
+}
+#pandd:hover, #wmsite:hover {
+
+  text-decoration: underline;
+  text-decoration-color: #fac221;
+
+}
+
+#advert {
+  position: relative;
+  bottom: 2480px;
+  left: 1250px;
+  border: 1px solid black;
+ max-width: fit-content;
+
+}
+#addtext {
+  color: grey;
+  position: relative;
+  top: 20px;
+  margin-right: 10px;
+  font-size: 10px;
+}
+#starscontainer .testdiv1 {
+  position: relative;
+  top: -0px;
+}

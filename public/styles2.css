@@ -1,0 +1,148 @@
+
+@font-face {
+  font-family: BogleRegular;
+  src: url('Assets/bogle_font/OTF/Bogle-Regular.otf');
+}
+@font-face {
+  font-family: BogleBold;
+  src: url('Assets/bogle_font/OTF/Bogle-Bold.otf');
+}
+
+#app1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  position: relative;
+  top: 200px;
+}
+#app2 {
+  position: relative;
+  top: 200px;
+}
+#app {
+  position: relative;
+  top: 200px;
+}
+body {
+  font-family: BogleRegular;
+}
+
+.grid-container {
+  display: flex;
+}
+
+.grid-item {
+  font-size: 50px;
+  font-family: BogleRegular;
+}
+
+.productDescriptionTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  font-family: BogleBold;
+  margin-bottom:5px;
+}
+
+.productDescriptionMetrics {
+  display: flex;
+  font-size: 12px;
+  margin-bottom:2.5em;
+}
+
+.stars {
+  margin-right: 1em;
+}
+
+.empty {
+  color:rgb(218, 218, 218);
+}
+
+.rating {
+  display: inline-block;
+  margin-right: 1em;
+  color: gray;
+}
+
+.ratingAmount {
+  text-decoration: underline;
+  margin-right: 1em;
+
+}
+
+.commentsAmount {
+  text-decoration: underline;
+  margin-right: 1em;
+
+}
+
+.storeSerial {
+  color: gray;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: BogleBold;
+
+}
+
+.availability {
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+  font-family: BogleBold;
+  margin-bottom:2.5em;
+}
+
+.addOns {
+  border: solid 1px rgb(218, 218, 218);
+  font-size: 12px;
+  padding: 1em;
+}
+
+.addOns div {
+  margin-bottom: 1em;
+}
+
+.addOnHeader {
+  font-size: 14px;
+  font-family: BogleBold;
+}
+
+.secondLine {
+  font-size: 11px;
+}
+
+.mainContainer {
+  display: flex;
+  height: 467px;
+  width: 540px;
+  justify-content: space-between ;
+}
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  color: gray;
+}
+
+#topArrow {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#bottomArrow {
+  display: block;
+}
+
+.zoom-lens {
+  position: absolute;
+  border: 1px solid gray;
+  width: 60px;
+  height: 80px;
+}
